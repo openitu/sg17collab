@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3" pages="4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3" pages="5">
   <diagram name="v0.4" id="tW1O6hjw4usm8nJSoHlP">
     <mxGraphModel dx="1084" dy="821" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -777,6 +777,275 @@
         </mxCell>
         <mxCell id="ImHohpon2PIt1dLdfCRK-1" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.AI-App_policy&lt;br&gt;(C736)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#D5E8D4;" parent="UUbwrfru9se-oMiFebL4-1" vertex="1">
           <mxGeometry x="778" y="555" width="69" height="27.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="AVx5OJ6E_IzOMzTVDmII" name="v0.8">
+    <mxGraphModel dx="2021" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-1" value="" style="group;rounded=1;fontSize=10;container=0;glass=0;fillColor=#CCE5FF;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="885.51" y="260" width="160.49" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-2" value="" style="group;rounded=1;fontSize=10;container=0;glass=0;fillColor=#E8E8E8;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-133" y="279" width="980" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-3" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="280" y="290" width="400" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-4" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeColor=none;fillColor=#E6E6E6;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="6" y="249" as="sourcePoint" />
+            <mxPoint x="827" y="249" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-5" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Model Design &amp;amp; Training&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="21" y="223" width="82.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-6" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Model Evaluation&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="160" y="223" width="82.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-7" value="&lt;font style=&quot;font-size: 14px&quot;&gt;AI System Deployment, Operation &amp;amp; Maintenance&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="300" y="223" width="360" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-8" value="&lt;font style=&quot;font-size: 14px&quot;&gt;AI System Retirement&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="717" y="223" width="82.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-9" value="" style="group;rounded=1;fontSize=10;container=0;glass=0;fillColor=#CCE5FF;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="350" y="634" width="250" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-10" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Infrastructure Layer&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="280" y="661.5" width="74.81" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-11" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Model&lt;br&gt;&amp;amp;Algorithm Layer&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="280" y="579" width="74.81" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-12" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;AI Service&amp;amp;&lt;br&gt;Supporting Layer&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="279.19" y="494" width="74.81" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-13" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;AI for Domain-Specific Application Layer&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="280" y="351.5" width="74.81" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-14" value="" style="group;rounded=1;fontSize=10;container=0;glass=0;fillColor=#CCE5FF;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="606" y="300" width="70" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-15" value="" style="group;rounded=1;fontSize=10;container=0;glass=0;fillColor=#CCE5FF;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="350" y="552" width="250" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-16" value="" style="group;rounded=1;fontSize=10;container=0;glass=0;fillColor=#CCE5FF;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="350" y="466" width="250" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-17" value="" style="group;rounded=1;fontSize=10;container=0;glass=0;fillColor=#CCE5FF;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="350" y="299" width="250" height="161" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-18" value="AI Security: Terms, definitions, general requirements" style="group;rounded=1;fontSize=14;container=0;glass=0;fillColor=#CCE5FF;verticalAlign=middle;fontStyle=1" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="10" y="143" width="810" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-19" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;glass=0;strokeColor=#000000;fillColor=#F5F5F5;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="397.81" y="-142" width="20" height="690" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-20" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="141.25" y="290" width="120" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-21" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="2.25" y="290" width="120" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-22" value="" style="rounded=0;whiteSpace=wrap;html=1;glass=0;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="698.25" y="290" width="120" height="395" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-23" value="Mechanisms to prevent/mitigate attacks, such as, Jailbreak, Prompt Injection, Prompt Engineering Attack&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="358.32" y="508" width="223.68" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-24" value="Confidential Computing" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="377.31" y="642" width="61" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-25" value="Model&amp;amp;Algorithm Encryption&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="357.31" y="560" width="74.69" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-26" value="Root of Trust" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="377.31" y="676" width="61" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-27" value="Attestation" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="443.16" y="642" width="61" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-28" value="Secure Boot" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="443.16" y="676" width="61" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-29" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="890" y="266" width="106.76" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-30" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Real-time Security Monitoring and Adaptive Defense&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="608.25" y="325" width="65.5" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-31" value="&lt;font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;&lt;font&gt;Data Security&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1A1A1A;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="10.75" y="299" width="103" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-32" value="Membership Inference" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="439" y="561" width="53.58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-33" value="&lt;font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;Model&amp;amp;Algorithm Security&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1A1A1A;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="10" y="338.5" width="103" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-34" value="&lt;font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;Finetuning Security&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1A1A1A;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="10" y="430.5" width="103" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-35" value="&lt;font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;b&gt;Evaluation of m&lt;/b&gt;&lt;b&gt;&lt;font&gt;odel security and safety (e.g., self-evaluation, 3rd party evaluation to address supply chain security issues):&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;- Security flaws testing&lt;br&gt;- Harmful behavior testing&lt;br&gt;- Harmful content testing&lt;br&gt;- ...&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1A1A1A;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="146.75" y="299" width="110.25" height="151" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-36" value="Hardware Security Module" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="512.08" y="642" width="77.92" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-37" value="..." style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="512.08" y="676" width="77.92" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-38" value="Model&amp;amp;Algorithm Runtime Security&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="356.31" y="591" width="82.69" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-39" value="Data Leakage" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="497.01" y="561" width="45.74" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-40" value="Finetuning Security" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="510.26" y="592" width="59.74" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-41" value="Gradient Leakage" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="445.42" y="592" width="60" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-42" value="Content Moderation" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="358.32" y="477" width="61" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-43" value="API Authorization" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="426.01000000000005" y="477" width="65" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-44" value="Transportation Security" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="497.01000000000005" y="477" width="65" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-45" value="&lt;b&gt;&lt;font style=&quot;font-size: 12px&quot; color=&quot;#0000ff&quot;&gt;AI for security:&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot; style=&quot;color: rgb(26 , 26 , 26)&quot;&gt;- Deepfake Detection&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;- Malware Detection&lt;br&gt;- Vulnerability Detection&lt;/font&gt;&lt;br style=&quot;color: rgb(26 , 26 , 26) ; font-size: 9px&quot;&gt;&lt;span style=&quot;color: rgb(26 , 26 , 26) ; font-size: 9px&quot;&gt;- Intrusion Detection&lt;br&gt;- Security Agent&lt;br&gt;- Automated Security&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(26 , 26 , 26)&quot;&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;Management&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(26 , 26 , 26)&quot;&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;- ...&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-style: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="892.51" y="268.5" width="113" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-46" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="356" y="303" width="237" height="97" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-47" value="&lt;b style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 10px ; font-style: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;Security improvement for vertical use cases including security&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;color: rgb(26 , 26 , 26) ; font-size: 9px&quot;&gt;- Finance: e.g., fraud detection&lt;/span&gt;&lt;br style=&quot;color: rgb(26 , 26 , 26) ; font-size: 9px&quot;&gt;&lt;span style=&quot;color: rgb(26 , 26 , 26) ; font-size: 9px&quot;&gt;- Healthcare: e.g., data leakage&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-style: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;font&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;- Vehicle: e.g., data leakage, data poisoning&lt;/font&gt;&lt;/span&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;&lt;br&gt;- Message: e.g., spam/phishing detection&amp;nbsp;&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;- Security Capabilities&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-style: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="362.42" y="296" width="237.58" height="77" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-48" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;glass=0;strokeColor=#000000;fillColor=#F5F5F5;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="398.5" y="350.5" width="20" height="807" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-49" value="" style="group;rounded=1;fontSize=14;container=0;glass=0;fillColor=#CCE5FF;verticalAlign=middle;fontStyle=1" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-2" y="770" width="832" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-50" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-style: normal ; font-weight: 700 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;General Framework of AI Security&lt;/font&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="265.75" y="102" width="295" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-51" value="..." style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="565.51" y="477.5" width="27.99" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-52" value="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 10px&quot; color=&quot;#0000ff&quot;&gt;Media generated by AI&lt;/font&gt;&lt;/b&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;: e.g., content authenticity, content copyright, digital watermarking&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=10;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+          <mxGeometry x="355.5" y="411.5" width="238" height="31.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-53" value="&lt;span style=&quot;font-weight: normal&quot;&gt;Data Lifecycle (Create, Use, Store/Secure, Delete)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="315" width="100" height="112.75" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-54" value="&lt;font&gt;&lt;b&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;Training Security&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1A1A1A;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="10.75" y="393" width="103" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-55" value="..." style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="573.01" y="591" width="23.99" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-56" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.sr-ai&lt;br&gt;(TD2438)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="608.25" y="149.5" width="58" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-57" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.sgGenAI&lt;br&gt;(TD2442)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="680" y="149.5" width="58" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-58" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.sr-da-gai&lt;br&gt;(TD2431)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="83.25" y="280" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-59" value="&lt;font style=&quot;font-size: 9px&quot;&gt;TR.se-ai&lt;br&gt;(TD2146)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="196" y="277" width="58" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-60" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.srm-fml&lt;br&gt;(TD2485)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="83.25" y="312" width="58" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-61" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.ig-dw&lt;br&gt;(TD2413)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="326" y="440" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-62" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.ig-AIgmd&lt;br&gt;(C770)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="389" y="440" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-63" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.VADSreqs&lt;br&gt;(C784)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="452.03999999999996" y="440" width="58" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-64" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.GenAI-Finetune&lt;br&gt;(C738)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="561.01" y="610" width="79.69" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-65" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.srm-fml&lt;br&gt;(TD2485)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="323" y="629.5" width="58" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-66" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.fr-ddsdfs&lt;br&gt;(C794)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="491.01" y="317.5" width="58" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-67" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.GenAI-Finetune&lt;br&gt;(C738)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="37" y="452" width="79.69" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-68" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.fr-ddsdfs&lt;br&gt;(C794)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="990.01" y="285.5" width="58" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-69" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.tc-fdgc&lt;br&gt;(C816)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="1020.51" y="339.5" width="58" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-70" value="&lt;font style=&quot;font-size: 9px&quot;&gt;X.AI-App_policy&lt;br&gt;(C736)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="968.51" y="390.5" width="69" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-71" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="452.03999999999996" y="397" as="sourcePoint" />
+            <mxPoint x="582.04" y="397" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-72" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="581" y="398" as="sourcePoint" />
+            <mxPoint x="581" y="278" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-73" value="" style="endArrow=classic;dashed=1;html=1;strokeWidth=2;startArrow=none;startFill=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580.25" y="284" as="sourcePoint" />
+            <mxPoint x="890" y="284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-74" value="" style="group;rounded=1;fontSize=10;container=0;glass=0;fillColor=#CCE5FF;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="701.25" y="299" width="114" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-75" value="&lt;div&gt;&lt;span&gt;&lt;b&gt;&lt;font color=&quot;#0000ff&quot;&gt;Data disposal&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;- Secure data archiving&lt;br&gt;- Data lineage tracking prevention&lt;br&gt;- Data deletion&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=10;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+          <mxGeometry x="705" y="313" width="106" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-76" value="" style="group;rounded=1;fontSize=10;container=0;glass=0;fillColor=#CCE5FF;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="701.25" y="413" width="114" height="117" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-77" value="&lt;div&gt;&lt;span&gt;&lt;b&gt;&lt;font color=&quot;#0000ff&quot;&gt;Model&amp;amp;Algorithm disposal&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;- Transitioning to archival use securely&lt;br&gt;-&amp;nbsp;Preventing unauthorized reactivation or repurposing&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=10;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+          <mxGeometry x="705" y="427" width="106" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-78" value="&lt;font style=&quot;font-size: 14px&quot;&gt;Security Management &amp;amp; Safety &amp;amp; Trustworthiness &amp;amp; User Confidence&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#0000FF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="173.75" y="784" width="479" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-79" value="&lt;div&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;- Continuous Security Management&lt;br&gt;- Testing for fairness, bias mitigation and explainability&lt;br&gt;-&amp;nbsp;Mitigating or preventing misusing Model&amp;amp;Algorithm&lt;br&gt;- Incorporating emerging standards and technologies&lt;br&gt;- ...&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=10;fillColor=#FFFFFF;align=left;" vertex="1" parent="1">
+          <mxGeometry x="260.31" y="812" width="295" height="67" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-80" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Security Interoperability&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="608.25" y="459" width="65.5" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-81" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Security Scalability&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="608.25" y="500" width="65.5" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-82" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;&amp;nbsp;Automated Incident Response&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="608.25" y="409" width="65.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GqNF6Kh-szcwGdqsS3DT-83" value="Model Theft" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;verticalAlign=middle;fontSize=9;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="547.76" y="560" width="45.74" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
