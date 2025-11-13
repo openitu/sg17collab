@@ -1,0 +1,14 @@
+{
+ "documentType": "report",
+ "group": 17,
+ "question": 11,
+ "place": "Geneva",
+ "start": "2025/04/08",
+ "end": "2025/04/17",
+ "workItems": ["X.dpki","TR.ac-pqc"],
+ "newWorkItems": null,
+ "deletedWorkItems": null,
+ "nextMeeting": ["X.509Amd.2","X.510Amd.1"],
+ "outgoingLiaisons": [44],
+ "rapporteurMeetings" : [40]
+}

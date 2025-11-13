@@ -1,0 +1,368 @@
+= Document
+:docNumber: 7
+:docType: Temporary Document
+:language: en
+:mn-output-extensions: doc,pdf
+== Abstract
+
+This TD contains the report for Question 11/17 meeting.
+
+== Introduction:
+
+Question 11/17 'Generic technologies to support secure applications' was adressed in _number_ sessions during the SG17 meeting held in Geneva, 2025/04/08 under the chainmanship of  and Jean-Paul LEMAIRE (International Organization for Standardization, France). The group adopted the agenda in link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0004[TD4R4].
+
+_The list of participants in reproduced in <<Annex_B>>_
+
+_Note: <<Annex_B>> list of participants is only requested for interim RGM, not for Q sessions during WP of SG meeting._
+
+The objectives for this meeting were:
+
+_–	Review input contributions and TDs;_
+
+_–	Review input liaison statements and draft reply outgoing liaison statements as appropriate;_
+
+_–	Finalize draft ITU-T Recommendations for consent, determination or approval by SG17;_
+
+_–	Finalize non-normative documents (e.g. draft Supplements, Technical Reports etc) for agreement by SG17;_
+
+_–	Propose new work items to be started by SG17;_
+
+_–   Issue outgoing liaison statements for coordination with other SDOs, Questions, or Study Groups;_
+
+_–	etc.…_
+
+== Executive summary | Highlights
+
+_Include here a detailed executive summary of the results of this Question meeting. This summary will be copied and pasted by the working party chair in the related WP report. So please provide a VERY ACCURATE summary_
+
+During this SG17 meeting, Q11/17 received 7 contributions and achieved the following results:
+
+-    4 work items were progressed: X.dpki, X.510 Amd.1, X.509Amd.2, XSTR.ac-pqc (ex TR.ac-pqc)
+
+-    2 were agreed as candidates for decision in next SG17 meeting: X.509Amd.2, X.510Amd.1
+
+-    1 outgoing liaison statement was agreed to be sent: to IETF SIDROPS WG
+
+-    1 interim meeting was planned before the next SG17 meeting: Agenda of ISO/IEC JTC 1/SC 6/WG 10 and ITU-T Q11/17 collaborative meeting
+
+-    _Appointment of associate rapporteur / liaison officers, if any_
+
+-    _Any other issue of importance (e.g. OID assignment, roadmap updates, workshop, joint session, A.5 qualification_
+
+== Documentation and email lists
+
+=== Documentation
+
+The list of documents for the meeting with detailed information (document number, title, source) is found in <<Annex_A>>
+
+The following documents were examined:
+
+-    Contributions: link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0041[C41], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0063[C63], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0066[C66], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0111[C111], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0122[C122], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0126[C126], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0146[C146]
+
+-    TD/P: link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-PLEN-0027[27], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-PLEN-0049[49]
+
+-    TD/G: link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0003[3], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0004[4], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0007[7], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0029[29], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0040[40], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0043[43], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0046[46], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0088[88]
+
+-    TD/1: link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0001[1], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0002[2R6], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0004[4R4], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0007[7R3], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0010[10], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0024[24], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0025[25], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0026[26], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0027[27], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0028[28], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0031[31], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0032[32R1], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0033[33], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0034[34], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0035[35], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0036[36R1], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0040[40R1], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0044[44R1], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0053[53], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0057[57], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0061[61], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0062[62]
+
+The complete documentation for this SG17 meeting is to be found at:
+
+link:link:https://www.itu.int/md/T25-SG17-20250408/sum/en[link:https://www.itu.int/md/T25-SG17-20250408/sum/en]
+
+=== Emailing list subscription
+
+E-mail correspondences pertaining to the activities of this Question are routinely conducted using the e-mail reflector https://www.itu.intt25sg17Q11@lists.itu.int.
+
+Those wishing to subscribe or unsubscribe to this, or other SG17 email reflectors should visit the mailing list web page at https://www.itu.int/net4/iwm?p0=0&p11=ITU&p12=ITU-SEP-ITU-T-SEP-SP%2017-SEP-Study%20Group%2017&p21=ITU&p22=ITU[subscription webpage].
+
+Information on SG17informal FTP areas (IFA) and all SG17 mailing lists is on the related https://www.itu.int/en/ITU-T/studygroups/2025-2028/17/Pages/ifa-structure.aspx[webpage].
+
+== Report of interim activities
+
+Since the last SG17 meeting, Question 11/17 held the following Rapporteur meeting-     7-11 October 2024 (Stockholm) The report of this Rapporteur meeting, which is found in (TD10-WP1) was approved at the WP1/17 held on _DD MM YYYY_
+
+== Discussions
+
+=== Outgoing work items
+
+==== Work Item 1: (X.dpki):
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0126[*C126]*
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0122[*C122]*
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0066[*C66]*
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0063[*C63]*
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0041[*C41]*
+
+==== Work Item 2: (X.510 Amd.1):
+
+==== Work Item 3: (X.509Amd.2):
+
+==== Work Item 4: (XSTR.ac-pqc (ex TR.ac-pqc)):
+
+=== New proposed work items
+
+==== New Work Item 1: (X.sgRPKI):
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0146[*C146*]
+
+==== New Work Item 2: ():
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0111[*C111*]
+
+=== Other Contributions (not directly related to a work item)
+
+=== Incoming liaison statements
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0088[*TD88/G*]: LS/i on consent of draft new Recommendation ITU-T Y.3087 (ex Y.SCid-fra) "Self-controlled identity based on blockchain - Functional requirements and architecture"  [from link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=ITU-T%20Study%20Group%2013[ITU-TStudyGroup13]]
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0046[*TD46/G*]: LS/i on Provision of handset-derived caller location information for emergency communications  [from link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=ITU-T%20Study%20Group%202[ITU-TStudyGroup2]]
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0043[*TD43/G*]: LS/i on the consent of Recommendation ITU-T M.3411 (ex. M.uiamr), "User identity and access management requirements for telecommunications management network"  [from link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=ITU-T%20Study%20Group%202[ITU-TStudyGroup2]]
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0040[*TD40/G*]: LS/i on informing about the latest PQTN TF publications  [from link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=GSMA[GSMA]]
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0029[*TD29/G*]: LS/i on the initiation of two new work items related to identity for metaverse  [from link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=ITU-T%20Study%20Group%2020[ITU-TStudyGroup20]]
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0007[*TD7/G*]: LS/i on highlights from the final meeting of the Joint Coordination Activity on Digital COVID-19 Certificates (JCA-DCC)  [from link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=JCA-DCC[JCA-DCC]]
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0004[*TD4/G*]: LS/i/r on the work item ITU-T Q.TSCA (reply to SG17-LS160) [ from ITU-T SG11] [from link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=ITU-T%20Study%20Group%2011[ITU-TStudyGroup11]]
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0003[*TD3/G*]: LS/i/r on Provision of handset-derived caller location information for emergency communications (reply to SG2-LS40)  [from link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=ITU-T%20Study%20Group%2011[ITU-TStudyGroup11]]
+
+=== Other TDs
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-PLEN-0049[*TD49/P*]: Report on collaboration with the SDL Forum Society (August 2024 - April 2025) (August 2024 - April 2025)
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-PLEN-0027[*TD27/P*]: Maintenance responsibility of SG17 webpages
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0062[*TD62/WP-1*]: LS/o on initiation of new work item of Technical Report TR.PKIC-man-ib: Localized management framework of trusted Web PKI certificate supporting fine-grained configuration and technical guidelines for Web PKI certificate validation for Internet browser [to IETF PKIX, LAMPS, CA/Browser Forum]
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0061[*TD61/WP-1*]: Output - new work item TR.PKIC-man-ib: Localized management framework of trusted Web PKI certificate supporting fine-grained configuration and technical guidelines for Web PKI certificate validation for Internet browser
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0057[*TD57/WP-1*]: Study Group 17 report as the lead study group on directory, public key infrastructure (PKI), formal languages and object identifiers
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0053[*TD53/WP-1*]: Study Group 17 report as the lead study group on directory, public key infrastructure (PKI), formal languages and object identifiers
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0044[*TD44/WP-1*]: LS/o on new work item of X.sgRPKI:Security guidelines on Resource Public Key Infrastructure deployment [to IETF SIDROPS WG]
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0040[*TD40/WP-1*]: Agenda of ISO/IEC JTC 1/SC 6/WG 10 and ITU-T Q11/17 collaborative meeting
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0036[*TD36/WP-1*]: Report of CQR (Co-located Quantum-Resistance) 1st meeting (Geneva, 14 April 2025)
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0035[*TD35/WP-1*]: Agenda of CQR (Co-located Quantum-Resistance) 1st meeting (Geneva, 14 April 2025)
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0034[*TD34/WP-1*]: Output - new work item X.sgRPKI: Security guidelines on Resource Public Key Infrastructure deployment
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0033[*TD33/WP-1*]: Output - TR.ac-pqc: Guideline on use of advanced cryptography based on PQC
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0032[*TD32/WP-1*]: Output - X.dpki: Decentralized public-key infrastructure
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0031[*TD31/WP-1*]: Identified issues with X.dpki: Decentralized public-key infrastructure
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0028[*TD28/WP-1*]: List of stale work items for WP1/17
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0027[*TD27/WP-1*]: List of incoming Liaison Statement for WP1/17
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0026[*TD26/WP-1*]: List of candidate texts of WP1/17 for action in this meeting
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0025[*TD25/WP-1*]: List of documents for WP1/17
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0024[*TD24/WP-1*]: Latest Work Programme of WP1/17
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0010[*TD10/WP-1*]: Report of Q11/17 interregnum Rapporteur Group Meeting (Stockholm, 7-11 October 2024)    
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0007[*TD7/WP-1*]: Report of Q11/17
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0004[*TD4/WP-1*]: Agenda of Q11/17
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0002[*TD2/WP-1*]: Report of  WP1/17
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0001[*TD1/WP-1*]: Agenda of WP1/17
+
+== Draft new/revised Recommendations proposed for "Approval" (TAP), "determination" (TAP) or "consent" (AAP)
+
+Note: The rapporteur checked that the editor applied the link:https://www.itu.int/en/ITU-T/studygroups/Documents/Doc-ITUT-Recs-Skelet.docx[skeleton template to draft Recommendations]  and thet the following Recommendations are compliant with the link:https://www.itu.int/oth/T0AF000004/en[Author(s guide]
+
+=== Recommendations for TAP approval (WTSA Resolution 1, §9)
+
+=== Recommendations for TAP determination (WTSA Resolution 1, §9)
+
+=== Recommendations for AAP consent (Rec. ITU-T A.8)
+
+=== Non-normative text (e.g., Supplements, Technical Reports, Technical Papers, Implementors' Guides ot other documents) for agreement
+
+== Intellectual property statements
+
+The Rapporteur reminded the meeting participants of the ITU-T IPR Policy (see link:https://www.itu.int/en/ITU-T/ipr/Pages/default.aspx[IPR]) and asked those present whether anyone has knowledge of intellectual property rights issues, including patents, copyright for software or text, marks, the use of which may be required to implement or publish the Recommendation being considered.
+
+The Rapporteur reminded the participants that any ITU-T member organization putting forward a standardization proposal should draw the attention of the TSB Director to any known or pending patent and any other applicable IPR issues.
+
+_No IPR statements were received at this meeting_
+
+_Company xxx submitted / promised to submit to TSB a ptaient declaration for draft Recommendation X.yyy_
+
+== Outgoing liaison statements
+
+The following outgoing LSs were prepared by the Question
+
+[cols="1,4,4,6,6,8,4"]
+.Outgoing liaison statements
+|===
+|#|Question|WP|For action to|For information to|Title|TD
+
+|1|Q11/17|WP1|_to IETF SIDROPS WG_|_to IETF SIDROPS WG_|LS/o on new work item of X.sgRPKI:Security guidelines on Resource Public Key Infrastructure deployment [to IETF SIDROPS WG]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0044[TD44R1/1]
+
+|===
+
+== Work programme
+
+SG17 reports use the place of a superscript next to a work item name to indicate its approval process
+
+-    ^*^ for TAP;
+
+-    ^**^ for agreement; and
+
+-    no superscript is for AAP
+
+=== New work items
+
+=== Deleted work items
+
+=== Updated Question work programme
+
+The current list of ongoing work items, including eventual new work items agreed at this meeting. (see item [[10.1]] above) as follows:
+
+[cols="1,4,4,4,10,8,4,4,4,4"]
+.Ongoing work items
+|===
+|#|Question|Work Item|Status|Title|Editor|Base Text|Equivalent e.g.,ISO/IEC|Target Date|Summary updated (Yes/No)
+
+|1|11/17|X.dpki| |Decentralized public-key infrastructure| |link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0032[TD32R1/1]| | |
+|2|11/17|X.510 Amd.1| || || | |
+|3|11/17|X.509Amd.2| || || | |
+|4|11/17|XSTR.ac-pqc (ex TR.ac-pqc)| || || | |
+|===
+
+Note: The latest SG17 Work programme can be found at link:https://www.itu.intITU-T/workprog/wp_search.aspx?sg=17[Work programme]
+
+== Candidate work items for decision at the next SG17 meeting
+
+The following work items are planned for decision at next SG17 meeting
+
+[cols="1,4,4,4,10,8,4,4,4"]
+.Candidate work items for next SG17 meeting
+|===
+|#|Question|Acronym (kind of publication)|Status|Title|Editor|Base Text|A.5 justification|Equivalent e.g.,ISO/IEC
+
+|1|11/17|X.509Amd.2| || | | |
+|2|11/17|X.510Amd.1| || | | |
+
+|===
+
+Note: The latest SG17 Work programme can be found at link:https://www.itu.int/ITU-T/workprog/wp_search.aspx?sg=17[Work programme]
+
+== Planned interim Rapporteurs meetings
+
+The following interim Rapporteurs group meetints for Question 11/17 are proposed for approval
+
+[cols="1,4,4,10,8"]
+.Interim Rapporteur meeting
+|===
+|Question|Date (time)|Place/Host|Terms of reference|Contact
+
+|11/17| | | |
+
+|===
+
+Details will be posted on the ITU-T SG17 Rapporteur Group meetings website: link:https://www.itu.int/net/ITU-T/lists/rgm.aspx?Group=17&type=interim[Rapporteur Group meetints website]
+
+== Scheduled WP or SG17 meetings
+
+Q11/17 is planning to meet again during SG17 or WP1 of SG17, to be held from _start_ to _end_. This question wull require _number_ of sessions
+
+Details will be posted on the ITU-T SG17 website link:https://www.itu.int/go/tsg17[SG17 website]
+
+[appendix]
+[align=center]
+== [[Annex_A]]
+
+[Documentation addressed by the Question]
+
+_Add a table here listing ALL Contributions and TDs (with details like document number, title, and source) addressed by the Questuon in this meeting_
+
+Note: List if all SG17 documents sorted by Questions could be downloaded at link:https://www.itu.int/md/T25-SG17-20250408/sum/en[documents]
+[cols="4,4,12,4"]
+.Contributions
+|===
+|Web|Source|Title|AI/Question
+
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0146[C146]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-C&question=Q11/17&source=China%20Telecommunications%20Corporation[ChinaTelecommunicationsCorporation]|Proposal to initiate a new work item - X.sgRPKI: Security guidelines on Resource Public Key Infrastructure deployment|Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0126[C126]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-C&question=Q11/17&source=China%20Mobile%20Communications%20Co.%20Ltd.[ChinaMobileCommunicationsCo.Ltd.]|Proposal for updating contents for recommendation X.dpki: Decentralized Public-key infrastructure|Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0122[C122]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-C&question=Q11/17&source=Denmark[Denmark]|14th Revised baseline text for X.dpki: Decentralized public-key infrastructure|Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0111[C111]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-C&question=Q11/17&source=China%20Unicom[ChinaUnicom]|Proposal to initiate a new work item - Technical Report: Localized management framework of trusted Web PKI certificate supporting fine-grained configuration and technical guidelines for Web PKI certificate validation for Internet browser|Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0066[C66]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-C&question=Q11/17&source=Korea%20%28Rep.%20of%29[Korea(Rep.of)]|12nd revised baseline text for X.dpki: Decentralized public-key infrastructure|Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0063[C63]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-C&question=Q11/17&source=Korea%20%28Rep.%20of%29[Korea(Rep.of)]|Revised baseline text for X.dpki: Decentralized public-key infrastructure|Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0041[C41]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-C&question=Q11/17&source=Korea%20%28Rep.%20of%29[Korea(Rep.of)]|Revised baseline text for X.dpki: Decentralized Public-key infrastructure|Q11/17
+
+|===
+
+[cols="4,4,12,4"]
+.Temporary Documents (GEN)
+|===
+|Web|Source|Title|AI/Question
+
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0088[TD88-GEN]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=ITU-T%20Study%20Group%2013[ITU]|LS/i on consent of draft new Recommendation ITU-T Y.3087 (ex Y.SCid-fra) "Self-controlled identity based on blockchain - Functional requirements and architecture" |Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0046[TD46-GEN]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=ITU-T%20Study%20Group%202[ITU]|LS/i on Provision of handset-derived caller location information for emergency communications |Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0043[TD43-GEN]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=ITU-T%20Study%20Group%202[ITU]|LS/i on the consent of Recommendation ITU-T M.3411 (ex. M.uiamr), "User identity and access management requirements for telecommunications management network" |Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0040[TD40-GEN]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=GSMA[GSMA]|LS/i on informing about the latest PQTN TF publications |Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0029[TD29-GEN]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=ITU-T%20Study%20Group%2020[ITU]|LS/i on the initiation of two new work items related to identity for metaverse |Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0007[TD7-GEN]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=JCA-DCC[JCA]|LS/i on highlights from the final meeting of the Joint Coordination Activity on Digital COVID-19 Certificates (JCA-DCC) |Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0004[TD4-GEN]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=ITU-T%20Study%20Group%2011[ITU]|LS/i/r on the work item ITU-T Q.TSCA (reply to SG17-LS160) [ from ITU-T SG11]|Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0003[TD3-GEN]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN&question=Q11/17&source=ITU-T%20Study%20Group%2011[ITU]|LS/i/r on Provision of handset-derived caller location information for emergency communications (reply to SG2-LS40) |Q11/17
+
+|===
+
+[cols="4,4,12,4"]
+.Temporary Documents (PLEN)
+|===
+|Web|Source|Title|AI/Question
+
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-PLEN-0049[TD49-PLEN]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-PLEN&question=Q11/17&source=Rapporteur%2C%20Q11/17[Rapporteur,Q11/17]|Report on collaboration with the SDL Forum Society (August 2024 - April 2025) (August 2024 - April 2025)|Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-PLEN-0027[TD27-PLEN]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-PLEN&question=Q11/17&source=Chair%2C%20ITU-T%20SG17[Chair,ITU]|Maintenance responsibility of SG17 webpages|Q11/17
+
+|===
+
+[cols="4,4,12,4"]
+.Temporary Documents (WP1)
+|===
+|Web|Source|Title|AI/Question
+
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0146[TD146-WP1]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-C&question=Q11/17&source=China%20Telecommunications%20Corporation[ChinaTelecommunicationsCorporation]|Proposal to initiate a new work item - X.sgRPKI: Security guidelines on Resource Public Key Infrastructure deployment|Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0126[TD126-WP1]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-C&question=Q11/17&source=China%20Mobile%20Communications%20Co.%20Ltd.[ChinaMobileCommunicationsCo.Ltd.]|Proposal for updating contents for recommendation X.dpki: Decentralized Public-key infrastructure|Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0122[TD122-WP1]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-C&question=Q11/17&source=Denmark[Denmark]|14th Revised baseline text for X.dpki: Decentralized public-key infrastructure|Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0111[TD111-WP1]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-C&question=Q11/17&source=China%20Unicom[ChinaUnicom]|Proposal to initiate a new work item - Technical Report: Localized management framework of trusted Web PKI certificate supporting fine-grained configuration and technical guidelines for Web PKI certificate validation for Internet browser|Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0066[TD66-WP1]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-C&question=Q11/17&source=Korea%20%28Rep.%20of%29[Korea(Rep.of)]|12nd revised baseline text for X.dpki: Decentralized public-key infrastructure|Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0063[TD63-WP1]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-C&question=Q11/17&source=Korea%20%28Rep.%20of%29[Korea(Rep.of)]|Revised baseline text for X.dpki: Decentralized public-key infrastructure|Q11/17
+|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0041[TD41-WP1]|link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-C&question=Q11/17&source=Korea%20%28Rep.%20of%29[Korea(Rep.of)]|Revised baseline text for X.dpki: Decentralized Public-key infrastructure|Q11/17
+
+|===
+
+[appendix]
+[align=center]
+== [[Annex_B]]
+
+[List of participants]
+
+Note: Annex B is only required for RGM, not for Q sessions during SG17 meeting
+
+[cols="8,10,6"]
+.Participants
+|===
+|Name|Entity|Country
+
+|===
+

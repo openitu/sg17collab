@@ -1,0 +1,145 @@
+= Document
+:docNumber: 4
+:docType: Temporary document
+:language: en
+:mn-output-extensions: doc,pdf
+== Abstract
+This TD contains the meeting agenda for Question 11/17 meeting.
+
+== Opening the meeting
+
+== Approval of the agenda
+(this document)
+
+== Question 11/17 meeting plan
+The SG17 timetable, including the sessions allocated for this Question, is to be found in the latest revision of link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-WP1-0004[TD4R4]
+
+*TUE 08/04/25*
+
+	- S1, S2: Opening plenary of SG17
+
+	- S3:
+
+	- S4:
+
+*WED 09/04/25*
+
+	- S1:
+
+	- S2:
+
+	- S3:
+
+	- S4:
+
+*THU 10/04/25*
+
+	- S1:
+
+	- S2:
+
+	- S3:
+
+	- S4:
+
+*FRI 11/04/25*
+
+	- S1:
+
+	- S2:
+
+	- S3:
+
+	- S4:
+
+*SAT 12/04/25*
+
+	- S1:
+
+	- S2:
+
+	- S3:
+
+	- S4:
+
+*SUN 13/04/25*
+
+	- S1:
+
+	- S2:
+
+	- S3:
+
+	- S4:
+
+*MON 14/04/25*
+
+	- S1:
+
+	- S2:
+
+	- S3:
+
+	- S4:
+
+*TUE 15/04/25*
+
+	- S1:
+
+	- S2:
+
+	- S3:
+
+	- S4:
+
+*WED 16/04/25*
+
+	- S1, S2, S3, S4: Closing Plenary of WP1/17
+
+*THU 17/04/25*
+
+	- S1, S2, S3, S4: Closing Plenary of SG17
+
+== Documentation for the meeting
+The SG17 documents can be found at
+The following documents will be considered:
+
+=== Contributions:
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0041[C41], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0063[C63], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0066[C66], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0111[C111], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0122[C122], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0126[C126], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-C-0146[C146]
+
+=== Report of interim activities
+
+=== Incoming Liaison Statements
+
+link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0003[TD3], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0004[TD4], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0007[TD7], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0029[TD29], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0040[TD40], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0043[TD43], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0046[TD46], link:https://www.itu.int/md/meetingdoc.asp?lang=en&parent=T25-SG17-250408-TD-GEN-0088[TD88]
+
+=== Other
+
+== Recommendations proposed for APPROVAL (TAP)
+
+== Recommendations proposed foe DETERMINATION (TAP)
+
+== Recommendations proposed for CONSENT (AAP)
+
+== Supplements, Technical Reports; Technical Papers, Implementors' Guides or other documents for AGREEMENT
+
+== Proposed new work items
+
+== Intellectual property statements
+
+== Outgoing Liaison Statements
+
+== Review of Question Work Programme
+Note TDNone/P contains the latest work programme of all Qs of SG17; Updated Q11/17 work programme should be included in Q11/17 meeting report TD7/17
+
+== Future work
+
+== Review of Question meeting report Report of Q11/17
+
+== Future meetings
+
+== AOB
+
+== Closure
+
