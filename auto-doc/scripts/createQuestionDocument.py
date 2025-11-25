@@ -141,6 +141,10 @@ genTableRows = getDocuments(documentType = "GEN",group = group,workingParty = wo
 wPTableRows = getDocuments(documentType = "WP",group = group,workingParty = workingPartyNumber,questions = question,start = startDate)
 agendaTitle = "Agenda of Q" + str(question) + "/" + str(group)
 reportTitle = "Report of Q" + str(question) + "/" + str(group)
+interimReportTitle = "Report of ITU-T Q" + str(question) + "/" + str(group)
+interimReports = []
+agendaNumber = 0
+agenda = ""
 if not 'approval' in content:
     for tableRow in wPTableRows:
         if tableRow.documentType == 'Approval':
@@ -167,7 +171,9 @@ for wPTableRow in wPTableRows:
     if compareStripped(wPTableRow.title,reportTitle):
         reportNumber = wPTableRow.number.value
         report = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + wPTableRow.lastRev + "]"
-        break
+    elif strippedStartsWith(interimReportTitle,wPTableRow.title):
+        interimReport = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + wPTableRow.lastRev + "]"
+        interimReports.append(interimReport)
 if documentType == "agenda":
     filename = "agenda_" + place + "_" + startDate + ".adoc"
     fid = open(filename,"w")
@@ -212,7 +218,11 @@ if documentType == "agenda":
             fid.write("\t- S4:\n\n")
         day = day + delta
     fid.write("== Documentation for the meeting\n")
-    fid.write("The SG" + str(group) + " documents can be found at\n")
+    year = int(startDate[2:4])
+    period = str(int(year / 4) * 4 + 1)
+    documentation = URL + "/md/T" + period + "-SG" + str(group) + "-" + startDate[2:] + "/sum/en"
+    fid.write("The SG" + str(group) + " documents can be found at: ")
+    fid.write("link:" + documentation + "[" + documentation + "]\n\n")
     fid.write("The following documents will be considered:\n\n")
     fid.write("=== Contributions:\n\n")
     first = True
@@ -223,6 +233,13 @@ if documentType == "agenda":
         fid.write("link:" + URL + tableRow.number.link + "[C" + str(tableRow.number.value) + tableRow.lastRev + "]")
     fid.write("\n\n")
     fid.write("=== Report of interim activities\n\n")
+    first = True
+    for interimReport in reversed(interimReports):
+        if not first:
+            fid.write(", ")
+        first = False
+        fid.write(interimReport)
+        fid.write("\n\n")
     fid.write("=== Incoming Liaison Statements\n\n")
     first = True
     for tableRow in reversed(genTableRows):
@@ -365,8 +382,9 @@ if documentType == "report":
     fid.write("The complete documentation for this SG" + str(group) + " meeting is to be found at:\n\n")
     year = int(startDate[2:4])
     period = str(int(year / 4) * 4 + 1)
-    documentation = "link:" + URL + "/md/T" + str(period) + "-SG" + str(group) + "-" + startDate + "/sum/en"
-    fid.write("link:" + documentation + "[" + documentation + "]\n\n")
+    documentation = URL + "/md/T" + period + "-SG" + str(group) + "-" + startDate + "/sum/en"
+    fid.write("The SG" + str(group) + " documents can be found at: ")
+    fid.write("link:" + documentation + "[documentation]\n\n")
     fid.write("=== Emailing list subscription\n\n")
     reflector = "t" + period + "sg" + str(group) + "Q" + str(question) + "@lists.itu.int"
     subscriptionWebpage =  "/net4/iwm?p0=0&p11=ITU&p12=ITU-SEP-ITU-T-SEP-SP%2017-SEP-Study%20Group%2017&p21=ITU&p22=ITU"
@@ -666,7 +684,7 @@ if documentType == "report":
     fid.write("_Add a table here listing ALL Contributions and TDs (with details like document number, title, and source) addressed by the Questuon in this meeting_\n\n")
     year = int(startDate[2:4])
     period = str(int(year / 4) * 4 + 1)
-    documentation = "link:" + URL + "/md/T" + str(period) + "-SG" + str(group) + "-" + startDate + "/sum/en"
+    documentation = "link:" + URL + "/md/T" + period + "-SG" + str(group) + "-" + startDate + "/sum/en"
     fid.write("Note: List if all SG" + str(group) + " documents sorted by Questions could be downloaded at " + documentation + "[documents]\n") 
     fid.write('[cols="4,4,12,4"]\n')
     fid.write(".Contributions\n")

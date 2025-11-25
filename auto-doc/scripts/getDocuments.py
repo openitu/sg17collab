@@ -27,7 +27,6 @@ class ValueAndLink(object):
         else:
             self.link = link
     def dump(self):
-        print("name " + str(self.name))
         print("value " + str(self.value))
         print("link " + str(self.link))
 
@@ -147,6 +146,14 @@ class Table(object):
         for row in self.rows:
             row.dump()
 
+def clean(value):
+    string = str(value)
+    newString = ""
+    for character in string:
+        if ord(character) >= 32:
+            newString = newString + character
+    return newString
+
 def splitTitle(title):
     documentType = ""
     recommendation = ""
@@ -249,11 +256,13 @@ def getDocuments(documentType = None,group = None,workingParty = None,questions 
                             column.dump()
                         if num == 1:
                             if debug:
-                                print("number")
+                                print("---number---")
                             if len(column.aElements) > 0:
                                 value = None
                                 if len(column.aElements[0].strongElements) > 0:
                                     value = column.aElements[0].strongElements[0]
+                                elif len(column.aElements[0].contents) > 0:
+                                    value = clean(column.aElements[0].contents[0])
                                 href = column.aElements[0].href
                                 number = ValueAndLink(value,href)
                                 if debug:
