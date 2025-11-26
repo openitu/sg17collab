@@ -366,7 +366,7 @@ if documentType == "report":
     fid.write("The complete documentation for this SG" + str(group) + " meeting is to be found at:\n\n")
     year = int(startDate[2:4])
     period = str(int(year / 4) * 4 + 1)
-    documentation = "link:" + URL + "/md/T" + str(period) + "-SG" + str(group) + "-" + startDate + "/sum/en"
+    documentation = "link:" + URL + "/md/T" + period + "-SG" + str(group) + "-" + startDate[2:] + "/sum/en"
     fid.write("link:" + documentation + "[" + documentation + "]\n\n")
     fid.write("=== Emailing list subscription\n\n")
     year = int(startDate[0:4])

@@ -51,6 +51,11 @@ def compareStripped(string1,string2):
     stripped2 = string2.replace(' ','')
     return stripped1 == stripped2
 
+def strippedStartsWith(string1,string2):
+    stripped1 = string1.replace(' ','')
+    stripped2 = string2.replace(' ','')
+    return string2.startswith(string1)
+
 def insertEscape(text):
     updatedText = ""
     for character in text:
