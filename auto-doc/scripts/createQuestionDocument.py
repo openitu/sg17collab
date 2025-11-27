@@ -137,6 +137,7 @@ if 'rapporteurMeetings' in content:
 questionDetails = getQuestion(group = group,question = question,start = startDate)
 cTableRows = getDocuments(documentType = "C",group = group,workingParty = workingPartyNumber,questions = question,start = startDate)
 plenTableRows = getDocuments(documentType = "PLEN",group = group,workingParty = workingPartyNumber,questions = question,start = startDate)
+allPlenTableRows = getDocuments(documentType = "PLEN",group = group,workingParty = workingPartyNumber,questions = "QALL",start = startDate)
 genTableRows = getDocuments(documentType = "GEN",group = group,workingParty = workingPartyNumber,questions = question,start = startDate)
 wPTableRows = getDocuments(documentType = "WP",group = group,workingParty = workingPartyNumber,questions = question,start = startDate)
 agendaTitle = "Agenda of Q" + str(question) + "/" + str(group)
@@ -145,6 +146,8 @@ interimReportTitle = "Report of ITU-T Q" + str(question) + "/" + str(group)
 interimReports = []
 agendaNumber = 0
 agenda = ""
+timePlanNumber = 0
+timePlan = ""
 if not 'approval' in content:
     for tableRow in wPTableRows:
         if tableRow.documentType == 'Approval':
@@ -161,6 +164,10 @@ if not 'agreement' in content:
     for tableRow in wPTableRows:
         if tableRow.documentType == 'Agreement':
             agreement.append(tableRow.number.value)
+for allPlenTableRow in allPlenTableRows:
+    if allPlenTableRow.title.startswith("Time plan"):
+        timePlanNumber = allPlenTableRow.number.value
+        timePlan = "link:" + URL + allPlenTableRow.number.link + "[TD" + str(allPlenTableRow.number.value) + allPlenTableRow.lastRev + "]"
 for wPTableRow in wPTableRows:
     if compareStripped(wPTableRow.title,agendaTitle):
         agendaNumber = wPTableRow.number.value
@@ -172,7 +179,7 @@ for wPTableRow in wPTableRows:
         reportNumber = wPTableRow.number.value
         report = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + wPTableRow.lastRev + "]"
     elif strippedStartsWith(interimReportTitle,wPTableRow.title):
-        interimReport = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + wPTableRow.lastRev + "]"
+        interimReport = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + "/" + str(workingPartyNumber) + wPTableRow.lastRev + "]"
         interimReports.append(interimReport)
 if documentType == "agenda":
     filename = "agenda_" + place + "_" + startDate + ".adoc"
@@ -188,7 +195,7 @@ if documentType == "agenda":
     fid.write("== Approval of the agenda\n")
     fid.write("(this document)\n\n")
     fid.write("== Question " + str(question) + "/" + str(group) + " meeting plan\n")
-    fid.write("The SG" + str(group) + " timetable, including the sessions allocated for this Question, is to be found in the latest revision of " + agenda + "\n\n")
+    fid.write("The SG" + str(group) + " timetable, including the sessions allocated for this Question, is to be found in the latest revision of " + timePlan + "\n\n")
     day = start
     delta = datetime.timedelta(hours = 24)
     while day <= end:
@@ -202,20 +209,21 @@ if documentType == "agenda":
             penultimate = True
         if day == end:
             last = True
-        fid.write("*" + date + "*\n\n")
-        if first:
-            fid.write("\t- S1, S2: Opening plenary of SG" + str(group)+ "\n\n")
-            fid.write("\t- S3:\n\n")
-            fid.write("\t- S4:\n\n")
-        elif penultimate:
-            fid.write("\t- S1, S2, S3, S4: Closing Plenary of WP" + str(workingPartyNumber) + "/" + str(group) + "\n\n")
-        elif last:
-            fid.write("\t- S1, S2, S3, S4: Closing Plenary of SG" + str(group) + "\n\n")
-        else:
-            fid.write("\t- S1:\n\n")
-            fid.write("\t- S2:\n\n")
-            fid.write("\t- S3:\n\n")
-            fid.write("\t- S4:\n\n")
+        if not date.startswith("SAT") and not date.startswith("SUN"):
+            fid.write("*" + date + "*\n\n")
+            if first:
+                fid.write("\t- S1, S2: Opening plenary of SG" + str(group)+ "\n\n")
+                fid.write("\t- S3:\n\n")
+                fid.write("\t- S4:\n\n")
+            elif penultimate:
+                fid.write("\t- S1, S2, S3, S4: Closing Plenary of WP" + str(workingPartyNumber) + "/" + str(group) + "\n\n")
+            elif last:
+                fid.write("\t- S1, S2, S3, S4: Closing Plenary of SG" + str(group) + "\n\n")
+            else:
+                fid.write("\t- S1:\n\n")
+                fid.write("\t- S2:\n\n")
+                fid.write("\t- S3:\n\n")
+                fid.write("\t- S4:\n\n")
         day = day + delta
     fid.write("== Documentation for the meeting\n")
     year = int(startDate[2:4])
@@ -247,7 +255,7 @@ if documentType == "agenda":
             if not first:
                 fid.write(", ")
             first = False
-            fid.write("link:" + URL + tableRow.number.link + "[TD" + str(tableRow.number.value) + tableRow.lastRev + "]")
+            fid.write("link:" + URL + tableRow.number.link + "[TD" + str(tableRow.number.value) + "/G" + tableRow.lastRev + "]")
     fid.write("\n\n")
     fid.write("=== Other\n\n")
     fid.write("== Recommendations proposed for APPROVAL (TAP)\n\n")
