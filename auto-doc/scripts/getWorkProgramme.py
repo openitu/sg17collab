@@ -34,6 +34,10 @@ def getWorkProgramme(workProgrammeFile):
             if elements[0] == "Work Item":
                 first = True
         else:
-            workItem = WorkItem(workItem = elements[0],question = elements[1],title = elements[2],timing = elements[3],group = elements[4],period = elements[5],version = elements[6],status = elements[7])
+            if len(elements) > 7:
+                workItem = WorkItem(workItem = elements[0],question = elements[1],title = elements[2],timing = elements[3],group = elements[4],period = elements[5],version = elements[6],status = elements[7])
+            else:
+                workItem = WorkItem(workItem = elements[0],question = elements[1],title = elements[2],group = elements[3],period = elements[4],version = elements[5],status = elements[6])
+                timing = ""
             workItems.append(workItem)
     return workItems
