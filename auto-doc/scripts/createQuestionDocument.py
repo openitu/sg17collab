@@ -717,7 +717,7 @@ if documentType == "report":
     fid.write(".Temporary Documents (WP" + str(workingPartyNumber) + ")\n")
     fid.write("|===\n")
     fid.write("|Web|Source|Title|AI/Question\n\n")
-    for tableRow in cTableRows:
+    for tableRow in wPTableRows:
         name = "link:" + URL + tableRow.number.link + "[TD" + tableRow.number.value + tableRow.lastRev + "-WP" + str(workingPartyNumber) + "]"
         source = "link:" + URL + tableRow.source.link + "[" + tableRow.source.value + "]"
         fid.write("|" + name + "|" + source + "|" + insertEscape(tableRow.title) + "|Q" + str(question) + "/" + str(group) + "\n")
