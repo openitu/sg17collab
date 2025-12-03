@@ -429,7 +429,7 @@ if documentType == "report":
         for tableRow in cTableRows:
             if workItems[i] in tableRow.title:
                 selectedTableRows.append(tableRow)
-                fid.write("link:" + URL + tableRow.number.link + "[*C" + tableRow.number.value + "]*\n\n")
+                fid.write("link:" + URL + tableRow.number.link + "[*C" + tableRow.number.value + tableRow.lastRev + "]*\n\n")
     fid.write("=== New proposed work items\n\n")
     num = 0
     for tableRow in cTableRows:
@@ -449,7 +449,7 @@ if documentType == "report":
                     if index2 >= 0:
                         name = tableRow.title[index1:index2]
             fid.write("==== New Work Item " + str(num) + ": (" + name + "):\n\n")
-            fid.write("link:" + URL + tableRow.number.link + "[*C" + tableRow.number.value + "]*\n\n")
+            fid.write("link:" + URL + tableRow.number.link + "[*C" + tableRow.number.value + tableRow.lastRev + "]*\n\n")
     fid.write("=== Other Contributions (not directly related to a work item)\n\n")
     for tableRow in cTableRows:
         if tableRow not in selectedTableRows:
@@ -459,17 +459,17 @@ if documentType == "report":
     for tableRow in genTableRows:
         if tableRow.title.startswith("LS/i"):
             selectedTableRows.append(tableRow)
-            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + "/G]*: " + tableRow.title + " [from link:" + URL + tableRow.source.link + "[" + tableRow.source.name + "]]\n\n")
+            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + tableRow.lastRev + "/G]*: " + tableRow.title + " [from link:" + URL + tableRow.source.link + "[" + tableRow.source.name + "]]\n\n")
     fid.write("=== Other TDs\n\n")
     for tableRow in plenTableRows:
         if tableRow not in selectedTableRows:
-            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + "/]*: " + tableRow.title + "\n\n")
+            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + tableRow.lastRev + "/]*: " + tableRow.title + "\n\n")
     for tableRow in genTableRows:
         if tableRow not in selectedTableRows:
-            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + "/G]*: " + tableRow.title + "\n\n")
+            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + tableRow.lastRev + "/G]*: " + tableRow.title + "\n\n")
     for tableRow in wPTableRows:
         if tableRow not in selectedTableRows:
-            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + "/WP-" + str(workingPartyNumber) + "]*: " + tableRow.title + "\n\n")
+            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + tableRow.lastRev + "/WP-" + str(workingPartyNumber) + "]*: " + tableRow.title + "\n\n")
     fid.write('== Draft new/revised Recommendations proposed for "Approval" (TAP), "determination" (TAP) or "consent" (AAP)\n\n')
     fid.write("Note: The rapporteur checked that the editor applied the link:" + URL + "/en/ITU-T/studygroups/Documents/Doc-ITUT-Recs-Skelet.docx[skeleton template to draft Recommendations]  and thet the following Recommendations are compliant with the link:" + URL + "/oth/T0AF000004/en[Author(s guide]\n\n")
     fid.write("=== Recommendations for TAP approval (WTSA Resolution 1, §9)\n\n")
