@@ -140,7 +140,7 @@ plenTableRows = getDocuments(documentType = "PLEN",group = group,workingParty = 
 allPlenTableRows = getDocuments(documentType = "PLEN",group = group,workingParty = workingPartyNumber,questions = "QALL",start = startDate)
 genTableRows = getDocuments(documentType = "GEN",group = group,workingParty = workingPartyNumber,questions = question,start = startDate)
 wPTableRows = getDocuments(documentType = "WP",group = group,workingParty = workingPartyNumber,questions = question,start = startDate)
-agendaTitle = "Agenda of Q" + str(question) + "/" + str(group)
+agendaTitle = "Draft agenda of Question " + str(question) + "/" + str(group)
 reportTitle = "Report of Q" + str(question) + "/" + str(group)
 interimReportTitle = "Report of ITU-T Q" + str(question) + "/" + str(group)
 interimReports = []
@@ -169,20 +169,20 @@ for allPlenTableRow in allPlenTableRows:
         timePlanNumber = allPlenTableRow.number.value
         timePlan = "link:" + URL + allPlenTableRow.number.link + "[TD" + str(allPlenTableRow.number.value) + allPlenTableRow.lastRev + "]"
 for wPTableRow in wPTableRows:
-    if compareStripped(wPTableRow.title,agendaTitle):
+    if strippedStartsWith(agendaTitle,wPTableRow.title):
         agendaNumber = wPTableRow.number.value
         agenda = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + wPTableRow.lastRev + "]"
         agendaLink = "TD" + str(agendaNumber) + "/" + str(group)
         break
 for wPTableRow in wPTableRows:
-    if compareStripped(wPTableRow.title,reportTitle):
+    if strippedStartsWith(reportTitle,wPTableRow.title):
         reportNumber = wPTableRow.number.value
         report = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + wPTableRow.lastRev + "]"
     elif strippedStartsWith(interimReportTitle,wPTableRow.title):
         interimReport = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + "/" + str(workingPartyNumber) + wPTableRow.lastRev + "]"
         interimReports.append(interimReport)
 if documentType == "agenda":
-    filename = "agenda_" + place + "_" + startDate + ".adoc"
+    filename = str(workingPartyNumber) + "-TD" + str(agendaNumber) + "-Q" + str(question) + " Agenda.adoc"
     fid = open(filename,"w")
     fid.write("= Document\n")
     fid.write(":docNumber: " + str(agendaNumber) + "\n")
@@ -272,7 +272,7 @@ if documentType == "agenda":
     fid.write("== AOB\n\n")
     fid.write("== Closure\n\n")
 if documentType == "report":
-    filename = "report_" + place + "_" + startDate + ".adoc"
+    filename = str(workingPartyNumber) + "-TD" + str(reportNumber) + "-Q" + str(question) + " Report.adoc"
     fid = open(filename,"w")
     fid.write("= Document\n")
     fid.write(":docNumber: " + str(reportNumber) + "\n")

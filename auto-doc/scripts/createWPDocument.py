@@ -185,7 +185,7 @@ for wPTableRow in wPTableRows:
 if documentType == "agenda":
     pass
 if documentType == "report":
-    filename = "WPReport_" + place + "_" + startDate + ".adoc"
+    filename = str(workingPartyNumber) + "-TD" + str(reportNumber) + " Report.adoc"
     fid = open(filename,"w")
     fid.write("= Document\n")
     fid.write(":docNumber: " + str(reportNumber) + "\n")
