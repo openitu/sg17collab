@@ -74,7 +74,7 @@ if 'end' in content:
         print("Invalid end data " + endString)
         sys.exit()
 studyGroupDetails = getStudyGroup(group,start = startString)
-workingPartyNumber = None
+workingPartyNumber = ''
 for currentWorkingParty in studyGroupDetails.workingParties:
     for currentQuestion in currentWorkingParty.questions:
         if currentQuestion.number == question:
@@ -144,9 +144,9 @@ agendaTitle = "Draft agenda of Question " + str(question) + "/" + str(group)
 reportTitle = "Report of Q" + str(question) + "/" + str(group)
 interimReportTitle = "Report of ITU-T Q" + str(question) + "/" + str(group)
 interimReports = []
-agendaNumber = 0
+agendaNumber = ''
 agenda = ""
-timePlanNumber = 0
+timePlanNumber = ''
 timePlan = ""
 if not 'approval' in content:
     for tableRow in wPTableRows:
@@ -170,13 +170,13 @@ for allPlenTableRow in allPlenTableRows:
         timePlan = "link:" + URL + allPlenTableRow.number.link + "[TD" + str(allPlenTableRow.number.value) + allPlenTableRow.lastRev + "]"
 for wPTableRow in wPTableRows:
     if strippedStartsWith(agendaTitle,wPTableRow.title):
-        agendaNumber = wPTableRow.number.value
+        agendaNumber = wPTableRow.number.value.replace(' ','')
         agenda = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + wPTableRow.lastRev + "]"
         agendaLink = "TD" + str(agendaNumber) + "/" + str(group)
         break
 for wPTableRow in wPTableRows:
     if strippedStartsWith(reportTitle,wPTableRow.title):
-        reportNumber = wPTableRow.number.value
+        reportNumber = wPTableRow.number.value.replace(' ','')
         report = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + wPTableRow.lastRev + "]"
     elif strippedStartsWith(interimReportTitle,wPTableRow.title):
         interimReport = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + "/" + str(workingPartyNumber) + wPTableRow.lastRev + "]"
@@ -449,27 +449,27 @@ if documentType == "report":
                     if index2 >= 0:
                         name = tableRow.title[index1:index2]
             fid.write("==== New Work Item " + str(num) + ": (" + name + "):\n\n")
-            fid.write("link:" + URL + tableRow.number.link + "[*C" + tableRow.number.value + "*]\n\n")
+            fid.write("link:" + URL + tableRow.number.link + "[*C" + tableRow.number.value + "]*\n\n")
     fid.write("=== Other Contributions (not directly related to a work item)\n\n")
     for tableRow in cTableRows:
         if tableRow not in selectedTableRows:
-            fid.write("link:" + URL + tableRow.number.link + "[*C" + tableRow.number.value + "*]\n\n")
+            fid.write("link:" + URL + tableRow.number.link + "[*C" + tableRow.number.value + "]*\n\n")
     selectedTableRows = []
     fid.write("=== Incoming liaison statements\n\n")
     for tableRow in genTableRows:
         if tableRow.title.startswith("LS/i"):
             selectedTableRows.append(tableRow)
-            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + "/G*]: " + tableRow.title + " [from link:" + URL + tableRow.source.link + "[" + tableRow.source.name + "]]\n\n")
+            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + "/G]*: " + tableRow.title + " [from link:" + URL + tableRow.source.link + "[" + tableRow.source.name + "]]\n\n")
     fid.write("=== Other TDs\n\n")
     for tableRow in plenTableRows:
         if tableRow not in selectedTableRows:
-            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + "/P*]: " + tableRow.title + "\n\n")
+            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + "/]*: " + tableRow.title + "\n\n")
     for tableRow in genTableRows:
         if tableRow not in selectedTableRows:
-            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + "/G*]: " + tableRow.title + "\n\n")
+            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + "/G]*: " + tableRow.title + "\n\n")
     for tableRow in wPTableRows:
         if tableRow not in selectedTableRows:
-            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + "/WP-" + str(workingPartyNumber) + "*]: " + tableRow.title + "\n\n")
+            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + "/WP-" + str(workingPartyNumber) + "]*: " + tableRow.title + "\n\n")
     fid.write('== Draft new/revised Recommendations proposed for "Approval" (TAP), "determination" (TAP) or "consent" (AAP)\n\n')
     fid.write("Note: The rapporteur checked that the editor applied the link:" + URL + "/en/ITU-T/studygroups/Documents/Doc-ITUT-Recs-Skelet.docx[skeleton template to draft Recommendations]  and thet the following Recommendations are compliant with the link:" + URL + "/oth/T0AF000004/en[Author(s guide]\n\n")
     fid.write("=== Recommendations for TAP approval (WTSA Resolution 1, §9)\n\n")

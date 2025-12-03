@@ -45,7 +45,7 @@ if 'group' in content:
     except Exception as e:
         print("Invalid group " + groupString)
         sys.exit()
-workingPartyNumber = None
+workingPartyNumber = ''
 if 'workingParty' in content:
     workingPartyString = content['workingParty']
     try:
@@ -172,13 +172,13 @@ if not 'agreement' in content:
             agreement.append(tableRow.number.value)
 for wPTableRow in wPTableRows:
     if compareStripped(wPTableRow.title,agendaTitle):
-        agendaNumber = wPTableRow.number.value
+        agendaNumber = wPTableRow.number.value.replace(' ','')
         agenda = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + wPTableRow.lastRev + "]"
         agendaLink = "TD" + str(agendaNumber) + "/" + str(group)
         break
 for wPTableRow in wPTableRows:
     if compareStripped(wPTableRow.title,reportTitle):
-        reportNumber = wPTableRow.number.value
+        reportNumber = wPTableRow.number.value.replace(' ','')
         report = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + wPTableRow.lastRev + "]"
         reportLink = "TD" + str(reportNumber) + "/" + str(group)
         break
@@ -429,7 +429,7 @@ if documentType == "report":
         questionReportTitle = "Report of Q" + str(questionNumber) + "/" + str(group)
         for wPTableRow in wPTableRows:
             if compareStripped(wPTableRow.title,questionReportTitle):
-                questionReportNumber = wPTableRow.number.value
+                questionReportNumber = wPTableRow.number.value.replace(' ','')
                 questionReport = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + wPTableRow.lastRev + "]"
                 break
         fid.write("The report of Q" + str(questionNumber) + "/" + str(group) + " can be found in " + questionReport + ". It was approved.\n\n")

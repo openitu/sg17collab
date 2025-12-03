@@ -2,6 +2,7 @@ import pycurl
 import os
 from io import BytesIO
 from bs4 import BeautifulSoup
+from commonFunctions import *
 
 debug = False
 
@@ -13,9 +14,15 @@ class ValueAndLink(object):
             self.value = ""
         else:
             name = ""
+            lastCharacter = 0
             for character in value:
-                if character != '[' and character != ' ' and character != ']':
+                if character == ' ':
+                    if lastCharacter != ' ':
+                        name = name + character
+                        lastCharacter = character
+                elif character != '[' and character != ']':
                     name = name + character
+                    lastCharacter = character
             self.name = name
             index = name.find('-')
             if index > 0:
