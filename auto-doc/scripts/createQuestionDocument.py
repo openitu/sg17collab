@@ -433,7 +433,7 @@ if documentType == "report":
     fid.write("=== New proposed work items\n\n")
     num = 0
     for tableRow in cTableRows:
-        if tableRow.title.startswith("Proposal to initiate a new work item"):
+        if isNewWorkItem(tableRow.title):
             selectedTableRows.append(tableRow)
             num = num + 1
             name = ""

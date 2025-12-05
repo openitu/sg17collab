@@ -63,3 +63,10 @@ def insertEscape(text):
             updatedText = updatedText + "\\"
         updatedText = updatedText + character
     return updatedText
+
+def isNewWorkItem(string):
+    lowerString = string.lower()
+    if 'new' in lowerString and 'work' in lowerString and 'item' in lowerString:
+        return True
+    else:
+        return False
