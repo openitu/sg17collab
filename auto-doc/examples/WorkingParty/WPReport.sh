@@ -1,1 +1,1 @@
-metanorma -t itu WPReport_Geneva_20250408.adoc
+metanorma -t itu '1-TD2 Report.adoc'
