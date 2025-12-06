@@ -473,7 +473,7 @@ if documentType == "report":
     fid.write('== Draft new/revised Recommendations proposed for "Approval" (TAP), "determination" (TAP) or "consent" (AAP)\n\n')
     fid.write("Note: The rapporteur checked that the editor applied the link:" + URL + "/en/ITU-T/studygroups/Documents/Doc-ITUT-Recs-Skelet.docx[skeleton template to draft Recommendations]  and thet the following Recommendations are compliant with the link:" + URL + "/oth/T0AF000004/en[Author(s guide]\n\n")
     fid.write("=== Recommendations for TAP approval (WTSA Resolution 1, §9)\n\n")
-    if len(approval) > 0:
+    if len(approval) >= 0:
         fid.write("The Following draft Recommendations are proposed for TAP approval:\n\n")
         fid.write('[cols="1,4,4,4,6,4,4,4"]\n')
         fid.write(".TAP approval\n")
@@ -499,11 +499,11 @@ if documentType == "report":
             fid.write("|" + str(num) + "|Q" + str(question) + "/" + str(group) + "|" + workItem + "| |" + insertEscape(textTitle) + "|" + finalText + "|" + a5Text + "|\n")
         fid.write("\n|===\n\n")
     fid.write("=== Recommendations for TAP determination (WTSA Resolution 1, §9)\n\n")
-    if len(determination) > 0:
+    if len(determination) >= 0:
         fid.write("The Following draft Recommendations are proposed for TAP determination:\n\n")
         fid.write('[cols="1,4,4,4,6,4,4,4"]\n')
         fid.write(".TAP determination\n")
-        fid.write("|===\n\n")
+        fid.write("|===\n")
         fid.write("|#|Question|Work item|Status|Title|Final Text|A.5 justification|Equivalent e.g. ISO/IEC\n\n")
         num = 0
         for element in determination:
@@ -525,7 +525,7 @@ if documentType == "report":
             fid.write("|" + str(num) + "|Q" + str(question) + "/" + str(group) + "|" + workItem + "| |" + insertEscape(textTitle) + "|" + finalText + "|" + a5Text + "|\n")
         fid.write("\n|===\n\n")
     fid.write("=== Recommendations for AAP consent (Rec. ITU-T A.8)\n\n")
-    if len(consent) > 0:
+    if len(consent) >= 0:
         fid.write("The Following draft Recommendations are proposed for consent\n\n")
         fid.write('[cols="1,4,4,4,6,4,4,4"]\n')
         fid.write(".AAP consent\n")
@@ -542,7 +542,7 @@ if documentType == "report":
             fid.write("|" + str(num) + "|Q" + str(question) + "/" + str(group) + "|" + workItem + "| |" + insertEscape(textTitle) + "|" + finalText + "|" + a5Text + "|\n")
         fid.write("\n|===\n\n")
     fid.write("=== Non-normative text (e.g., Supplements, Technical Reports, Technical Papers, Implementors' Guides ot other documents) for agreement\n\n")
-    if len(agreement) > 0:
+    if len(agreement) >= 0:
         fid.write("The following documents are proposed for agreement:\n\n")
         fid.write('[cols="1,4,4,4,10,4"]\n')
         fid.write(".Non normative texts\n")
@@ -562,9 +562,9 @@ if documentType == "report":
     fid.write("The Rapporteur reminded the meeting participants of the ITU-T IPR Policy (see link:" + URL + "/en/ITU-T/ipr/Pages/default.aspx[IPR]) and asked those present whether anyone has knowledge of intellectual property rights issues, including patents, copyright for software or text, marks, the use of which may be required to implement or publish the Recommendation being considered.\n\n") 
     fid.write("The Rapporteur reminded the participants that any ITU-T member organization putting forward a standardization proposal should draw the attention of the TSB Director to any known or pending patent and any other applicable IPR issues.\n\n")
     fid.write("_No IPR statements were received at this meeting_\n\n")
-    fid.write("_Company xxx submitted / promised to submit to TSB a ptaient declaration for draft Recommendation X.yyy_\n\n")
+    fid.write("_Company xxx submitted / promised to submit to TSB a patent declaration for draft Recommendation X.yyy_\n\n")
     fid.write("== Outgoing liaison statements\n\n")
-    if len(outgoingLiaisonStatements) > 0:
+    if len(outgoingLiaisonStatements) >= 0:
         fid.write("The following outgoing LSs were prepared by the Question\n\n")
         fid.write('[cols="1,4,4,6,6,8,4"]\n')
         fid.write(".Outgoing liaison statements\n")
@@ -593,7 +593,7 @@ if documentType == "report":
     fid.write("-    ^**^ for agreement; and\n\n")
     fid.write("-    no superscript is for AAP\n\n")
     fid.write("=== New work items\n\n")
-    if len(newWorkItems) > 0:
+    if len(newWorkItems) >= 0:
         fid.write("The meeting agreed to start work on the following new work items\n\n")
         fid.write('[cols="1,4,4,4,4,6,4,4,4"]\n')
         fid.write(".New work items\n")
@@ -615,7 +615,7 @@ if documentType == "report":
         fid.write("Note1: A.1 justification template can be downloaded link;" + URL + "/en/ITU-T/studygroups/Documents/Form-A.01-Annex-A-New-Rec-Justif-template.docx[here].\n\n")
         fid.write("Note2: A.13 justification template can be downloaded link:" + URL + "/en/ITU-T/studygroups/Documents/Form-A.13-Annex-A-New_non-normative_Justif-template.docx[here].\n\n")
     fid.write("=== Deleted work items\n\n")
-    if len(deletedWorkItems) > 0:
+    if len(deletedWorkItems) >= 0:
         fid.write("The meeting agreed to discontinue the following work items:\n\n")
         fid.write('[cols="1,4,6,10"]\n')
         fid.write(".Deleted work items\n")
@@ -633,7 +633,7 @@ if documentType == "report":
         fid.write("|===\n\n")
     fid.write("=== Updated Question work programme\n\n")
     fid.write("The current list of ongoing work items, including eventual new work items agreed at this meeting. (see item [[10.1]] above) as follows:\n\n")
-    if len(workItems) > 0:
+    if len(workItems) >= 0:
         fid.write('[cols="1,4,4,4,10,8,4,4,4,4"]\n')
         fid.write(".Ongoing work items\n")
         fid.write("|===\n")
@@ -651,7 +651,7 @@ if documentType == "report":
         fid.write("|===\n\n")
     fid.write("Note: The latest SG" + str(group) + " Work programme can be found at link:" + URL + "ITU-T/workprog/wp_search.aspx?sg=" + str(group) + "[Work programme]\n\n")
     fid.write("== Candidate work items for decision at the next SG" + str(group) + " meeting\n\n")
-    if len(candidateForNextMeeting) > 0:
+    if len(candidateForNextMeeting) >= 0:
         fid.write("The following work items are planned for decision at next SG" + str(group) + " meeting\n\n")
         fid.write('[cols="1,4,4,4,10,8,4,4,4"]\n')
         fid.write(".Candidate work items for next SG" + str(group) + " meeting\n")
@@ -675,7 +675,7 @@ if documentType == "report":
     fid.write(".Interim Rapporteur meeting\n")
     fid.write("|===\n")
     fid.write("|Question|Date (time)|Place/Host|Terms of reference|Contact\n\n")
-    if len(rapporteurMeetings) > 0:
+    if len(rapporteurMeetings) >= 0:
         num = 0
         for element in rapporteurMeetings:
             num = num + 1
