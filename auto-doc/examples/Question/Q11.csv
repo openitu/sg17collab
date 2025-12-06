@@ -1,0 +1,31 @@
+ITU-T Work Programme Report;;;;;;
+;;;;;;
+14 work item(s) match the following criteria:;;;;;;
+Study Period: ;2025-2028;;;;;
+Study Group:;SG17: Security;;;;;
+Working Party:;WP1/17: Digital identity, Quantum based security, PKI and Fundamental security technologies;;;;;
+Question:;Q11/17: Generic technologies to support secure applications;;;;;
+Work Item Status:;Pending SG/WP confirmation, Under study, Consented / Determined, Deferred to WTSA, Approved;;;;;
+First Registered: ;Anytime;;;;;
+Consent Date Between:;Any to Any;;;;;
+Approval Date Between:;Any to Any;;;;;
+;;;;;;
+Report Generated On:;27/Nov/2025 8:22:49 AM;;;;;
+Link:;https://www.itu.int/myworkspace/t-wp?isn_sp=9677&isn_sg=9687&isn_wp=12308&isn_qu=10850&status=8,1,3,7,2&firstregistered=-1&columns=b,c,d,f,g,j,k&pg_size=10;;;;;
+;;;;;;
+;;;;;;
+Work Item;Question;Title/Subject;Study Group;Study Period;Version;Status
+X.508 (ex X.pki-em);Q11/17;The Directory: Key management and public-key infrastructure establishment and maintenance;SG17;2025-2028;New;Approved 2024-10-29
+X.dpki;Q11/17;Decentralized Public-key infrastructure;SG17;2025-2028;New;Under study
+X.500 (2019) Amd.1;Q11/17;The Directory: Overview of concepts, models and services;SG17;2025-2028;-;Approved 2024-10-29
+X.501 (2019) Amd.2;Q11/17;The Directory: Models;SG17;2025-2028;-;Approved 2024-10-29
+X.509 (2019) Amd.1;Q11/17;The Directory: Public-key and attribute certificate frameworks;SG17;2025-2028;-;Approved 2024-10-29
+X.510 Amd.1;Q11/17;The Directory - Protocol specifications for secure operations;SG17;2025-2028;-;Under study
+X.511 (2019) Amd.1;Q11/17;The Directory - Directory abstract service;SG17;2025-2028;-;Approved 2024-10-29
+X.518 (2019) Amd.1;Q11/17;The Directory - Distributed operations;SG17;2025-2028;-;Approved 2024-10-29
+X.519 (2019) Amd.1;Q11/17;The Directory - Directory protocols;SG17;2025-2028;-;Approved 2024-10-29
+X.520 (2019) Amd.1;Q11/17;The Directory - Selected attribute types;SG17;2025-2028;-;Approved 2024-10-29
+X.521 (2019) Amd.1;Q11/17;The Directory - Selected object classes;SG17;2025-2028;-;Approved 2024-10-29
+X.525 (2019) Amd.1;Q11/17;The Directory - Replication;SG17;2025-2028;-;Approved 2024-10-29
+X.509Amd.2;Q11/17;The Directory: Public-key and attribute certificate frameworks;SG17;2025-2028;Rev.;Under study
+XSTR.ac-pqc (ex TR.ac-pqc);Q11/17;Technical Report: Guidance on use of advanced cryptography based on Post Quantum Cryptography (PQC);SG17;2025-2028;New;Under study
