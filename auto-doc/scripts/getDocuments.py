@@ -170,23 +170,30 @@ def splitTitle(title):
     if index1 >= 0:
         documentType = title[:index1]
         if documentType == 'Approval' or documentType == 'Determination':
-            index2 = title.find(' (')
-            index3 = title.find('):')
+            index2 = title.find(':')
             if index2 >= 0:
                 recommendation = title[index1 + 3:index2]
-                if index3 > 0:
-                    acronym = title[index2 + 2:index3]
-                    textTitle = title[index3 + 3:]
+                textTitle = title[index2 + 2:]
             else:
-                index2 = title.find(':')
-                if index2 > 0:
+                index2 = title.find(' (')
+                index3 = title.find('):')
+                if index2 >= 0:
                     recommendation = title[index1 + 3:index2]
-                    textTitle = title[index2 + 1:]
+                    if index3 > 0:
+                        acronym = title[index2 + 2:index3]
+                        textTitle = title[index3 + 3:]
+                else:
+                    textTitle = title[index1 + 3:]
         elif documentType == 'Consent':
             index2 = title.find(':')
             if index2 >= 0:
                 acronym = title[index1 + 3:index2]
-                textTitle = title[index2 + 1:]
+                textTitle = title[index2 + 2:]
+        elif documentType == 'Agreement':
+            index2 = title.find(':')
+            if index2 >= 0:
+                acronym = title[index1 + 3:index2]
+                textTitle = title[index2 + 2:]
         elif documentType == 'Output':
             string = title[index1 + 3:]
             if string.startswith('new work item'):
@@ -200,6 +207,8 @@ def splitTitle(title):
                 if index2 >= 0:
                     acronym = string[9:index2]
                     textTitle = string[index2 + 2:]
+    if textTitle.startswith('"') and textTitle.endswith('"'):
+        textTitle = textTitle[1:len(textTitle) - 1]
     return (documentType,recommendation,acronym,textTitle)
 
 def getDocuments(documentType = None,group = None,workingParty = None,questions = None,start = None):

@@ -95,7 +95,7 @@ consent = []
 if 'consent' in content:
     if not content['consent'] is None:
         consent = content['consent']
-agreement = []
+nonNormative = []
 if 'agreement' in content:
     if not content['agreement'] is None:
         nonNormative = content['agreement']
@@ -146,6 +146,8 @@ interimReportTitle = "Report of ITU-T Q" + str(question) + "/" + str(group)
 interimReports = []
 agendaNumber = ''
 agenda = ""
+reportNumber = ''
+report = ""
 timePlanNumber = ''
 timePlan = ""
 if not 'approval' in content:
@@ -163,7 +165,7 @@ if not 'consent' in content:
 if not 'agreement' in content:
     for tableRow in wPTableRows:
         if tableRow.documentType == 'Agreement':
-            agreement.append(tableRow.number.value)
+            nonNormative.append(tableRow.number.value)
 for allPlenTableRow in allPlenTableRows:
     if allPlenTableRow.title.startswith("Time plan"):
         timePlanNumber = allPlenTableRow.number.value
@@ -286,7 +288,7 @@ if documentType == "report":
         if wPTableRow.title == "Agenda of Q" + str(question) + "/" + str(group):
             agenda = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + wPTableRow.lastRev + "]"
             break
-    fid.write("Question " + str(question) + "/" + str(group) + " '" + questionDetails.title + "' " + "was adressed in _number_ sessions during the SG" + str(group) + " meeting held in " + str(place) + ", " + startString + " under the chainmanship of ")
+    fid.write("Question " + str(question) + "/" + str(group) + " '" + questionDetails.title + "' " + "was adressed in _number_ sessions during the SG" + str(group) + " meeting held in " + str(place) + ", " + startString + " under the chairmanship of ")
     rapporteurs = getRapporteurs(questionDetails)
     associateRapporteurs = getAssociateRapporteurs(questionDetails)
     first = True
@@ -315,8 +317,8 @@ if documentType == "report":
         fid.write("-    " + str(len(determination)) + " Recommendations were finalized znd proposed for TAP determination: " + commaSeparatedList(determination) + "\n\n") 
     if len(consent) > 0:
         fid.write("-    " + str(len(consent)) + " Recommendation were finalized and proposed for AAP consent: " + commaSeparatedList(consent) + "\n\n") 
-    if len(agreement) > 0:
-        fid.write("-    " + str(len(agreement)) + " non-normative texts (e.g. Supplements, Technical reports, etc.) were finalized znd proposed for agreement: " + commaSeparatedList(agreement) + "\n\n") 
+    if len(nonNormative) > 0:
+        fid.write("-    " + str(len(nonNormative)) + " non-normative texts (e.g. Supplements, Technical reports, etc.) were finalized znd proposed for agreement: " + commaSeparatedList(nonNormative) + "\n\n") 
     if len(workItems) == 1:
         fid.write("-    " + str(len(workItems)) + " work item was progressed: " + commaSeparatedList(workItems) + "\n\n") 
     elif len(workItems) > 1:
@@ -427,7 +429,12 @@ if documentType == "report":
     for i in range(0,len(workItems)):
         fid.write("==== Work Item " + str(i + 1) + ": (" + workItems[i] + "):\n\n")
         for tableRow in cTableRows:
-            if workItems[i] in tableRow.title:
+            index = workItems[i].find(' ')
+            if index > 0:
+                workItem = workItems[i][:index]
+            else:
+                workItem = workItems[i]
+            if workItem.lower() in tableRow.title.lower():
                 selectedTableRows.append(tableRow)
                 fid.write("link:" + URL + tableRow.number.link + "[*C" + tableRow.number.value + tableRow.lastRev + "]*\n\n")
     fid.write("=== New proposed work items\n\n")
@@ -521,7 +528,7 @@ if documentType == "report":
                 workItem = tD.recommendation + "(" + tD.acronym + ")"
             else:
                 workItem = tD.recommendation
-            textTitle = tD.recommendation
+            textTitle = tD.textTitle
             fid.write("|" + str(num) + "|Q" + str(question) + "/" + str(group) + "|" + workItem + "| |" + insertEscape(textTitle) + "|" + finalText + "|" + a5Text + "|\n")
         fid.write("\n|===\n\n")
     fid.write("=== Recommendations for AAP consent (Rec. ITU-T A.8)\n\n")
@@ -539,23 +546,47 @@ if documentType == "report":
                 finalText = ""
             else:
                 finalText = "link:" + URL + tD.number.link + "[TD " + tD.number.value + tD.lastRev + "/" + str(workingPartyNumber) + "]"
+            if a5 is None:
+                a5Text = ""
+            else:
+                a5text = "link:" + URL + a5.number.link + "[TD " + a5.number.value + a5.lastRev + "/" + str(workingPartyNumber) + "]"
+            if len(tD.recommendation) > 0:
+                if len(tD.acronym) > 0:
+                    workItem = tD.recommendation + "(" + tD.acronym + ")"
+                else:
+                    workItem = tD.recommendation
+            else:
+                workItem = tD.acronym
+            textTitle = tD.textTitle
             fid.write("|" + str(num) + "|Q" + str(question) + "/" + str(group) + "|" + workItem + "| |" + insertEscape(textTitle) + "|" + finalText + "|" + a5Text + "|\n")
         fid.write("\n|===\n\n")
     fid.write("=== Non-normative text (e.g., Supplements, Technical Reports, Technical Papers, Implementors' Guides ot other documents) for agreement\n\n")
-    if len(agreement) >= 0:
+    if len(nonNormative) >= 0:
         fid.write("The following documents are proposed for agreement:\n\n")
         fid.write('[cols="1,4,4,4,10,4"]\n')
         fid.write(".Non normative texts\n")
         fid.write("|===\n")
         fid.write("|#|Question|Work item|Status|Title|Final Text\n\n")
         num = 0
-        for element in agreement:
+        for element in nonNormative:
             (questionName,tD,a5) = findQuestionNameTDandA5(wPTableRows,element)
             num = num + 1
-            if td is None:
+            if tD is None:
                 finalText = ""
             else:
                 finalText = "link:" + URL + tD.number.link + "[TD " + tD.number.value + tD.lastRev + "/" + str(workingPartyNumber) + "]"
+            textTitle = ""
+            workItem = ""
+            for i in range(0,len(workItems)):
+                index = workItems[i].find(' ')
+                if index > 0:
+                    currentWorkItem = workItems[i][:index].replace('_','.')
+                else:
+                    currentWorkItem = workItems[i].replace('_','.')
+                if currentWorkItem.lower() in tD.title.replace('_','.').lower():
+                    workItem = currentWorkItem
+                    break
+            textTitle = splitTitle(tD.title)[3]
             fid.write("|" + str(num) + "|Q" + str(question) + "/" + str(group) + "|" + workItem + "| |" + insertEscape(textTitle) + "|" + finalText + "\n")
         fid.write("\n|===\n\n")
     fid.write("== Intellectual property statements\n\n")
@@ -670,7 +701,7 @@ if documentType == "report":
         fid.write("\n|===\n\n")
     fid.write("Note: The latest SG" + str(group) + " Work programme can be found at link:" + URL + "/ITU-T/workprog/wp_search.aspx?sg=" + str(group) + "[Work programme]\n\n")
     fid.write("== Planned interim Rapporteurs meetings\n\n")
-    fid.write("The following interim Rapporteurs group meetints for Question " + str(question) + "/" + str(group) + " are proposed for approval\n\n")
+    fid.write("The following interim Rapporteurs group meetings for Question " + str(question) + "/" + str(group) + " are proposed for approval\n\n")
     fid.write('[cols="1,4,4,10,8"]\n')
     fid.write(".Interim Rapporteur meeting\n")
     fid.write("|===\n")
@@ -681,7 +712,7 @@ if documentType == "report":
             num = num + 1
             fid.write("|" + str(question) + "/" + str(group) + "| | | |\n")
     fid.write("\n|===\n\n")
-    fid.write("Details will be posted on the ITU-T SG" + str(group) + " Rapporteur Group meetings website: link:" + URL + "/net/ITU-T/lists/rgm.aspx?Group=" + str(group) + "&type=interim[Rapporteur Group meetints website]\n\n")
+    fid.write("Details will be posted on the ITU-T SG" + str(group) + " Rapporteur Group meetings website: link:" + URL + "/net/ITU-T/lists/rgm.aspx?Group=" + str(group) + "&type=interim[Rapporteur Group meetings website]\n\n")
     fid.write("== Scheduled WP or SG" + str(group) + " meetings\n\n")
     fid.write("Q" + str(question) + "/" + str(group) + " is planning to meet again during SG" + str(group) + " or WP" + str(workingPartyNumber) + " of SG" + str(group) + ", to be held from _start_ to _end_. This question wull require _number_ of sessions\n\n")
     fid.write("Details will be posted on the ITU-T SG" + str(group) + " website link:" + URL + "/go/tsg" + str(group) + "[SG" + str(group) + " website]\n\n")
@@ -689,7 +720,7 @@ if documentType == "report":
     fid.write("[align=center]\n")
     fid.write("== [[Annex_A]]\n\n")
     fid.write("[Documentation addressed by the Question]\n\n")
-    fid.write("_Add a table here listing ALL Contributions and TDs (with details like document number, title, and source) addressed by the Questuon in this meeting_\n\n")
+    fid.write("_Add a table here listing ALL Contributions and TDs (with details like document number, title, and source) addressed by the Question in this meeting_\n\n")
     year = int(startDate[2:4])
     period = str(int(year / 4) * 4 + 1)
     documentation = "link:" + URL + "/md/T" + period + "-SG" + str(group) + "-" + startDate + "/sum/en"
