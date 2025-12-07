@@ -288,7 +288,7 @@ if documentType == "report":
         if wPTableRow.title == "Agenda of Q" + str(question) + "/" + str(group):
             agenda = "link:" + URL + wPTableRow.number.link + "[TD" + str(wPTableRow.number.value) + wPTableRow.lastRev + "]"
             break
-    fid.write("Question " + str(question) + "/" + str(group) + " '" + questionDetails.title + "' " + "was adressed in _number_ sessions during the SG" + str(group) + " meeting held in " + str(place) + ", " + startString + " under the chairmanship of ")
+    fid.write("Question " + str(question) + "/" + str(group) + " '" + questionDetails.title + "' " + "was addressed in _number_ sessions during the SG" + str(group) + " meeting held in " + str(place) + ", " + startString + " under the chairmanship of ")
     rapporteurs = getRapporteurs(questionDetails)
     associateRapporteurs = getAssociateRapporteurs(questionDetails)
     first = True
@@ -470,7 +470,7 @@ if documentType == "report":
     fid.write("=== Other TDs\n\n")
     for tableRow in plenTableRows:
         if tableRow not in selectedTableRows:
-            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + tableRow.lastRev + "/]*: " + tableRow.title + "\n\n")
+            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + tableRow.lastRev + "/P]*: " + tableRow.title + "\n\n")
     for tableRow in genTableRows:
         if tableRow not in selectedTableRows:
             fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + tableRow.lastRev + "/G]*: " + tableRow.title + "\n\n")
