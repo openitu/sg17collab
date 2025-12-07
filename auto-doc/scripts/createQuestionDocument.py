@@ -100,6 +100,7 @@ if 'agreement' in content:
     if not content['agreement'] is None:
         nonNormative = content['agreement']
 workItems = []
+workItemDetails = []
 if 'workItems' in content:
     if not content['workItems'] is None:
         workItems = content['workItems']
@@ -674,11 +675,18 @@ if documentType == "report":
             num = num + 1
             title = ""
             tDName = ""
+            status = ""
             (questionName,tD) = findTDByName(wPTableRows,element)
             if not tD is None:
                 title = tD.textTitle
                 tDName = "link:" + URL + tD.number.link + "[TD" + tD.number.value + tD.lastRev + "/" + str(workingPartyNumber) + "]"
-            fid.write("|" + str(num) + "|" + str(question) + "/" + str(group) + "|" + str(element) + "| |" + insertEscape(title) + "| |" + tDName + "| | |\n")
+            else:
+                for workItemDetail in workItemDetails:
+                    if workItemDetail.workItem == element:
+                        title = workItemDetail.title
+                        status = workItemDetail.status
+                        break
+            fid.write("|" + str(num) + "|" + str(question) + "/" + str(group) + "|" + str(element) + "|" + status +  "|" + insertEscape(title) + "| |" + tDName + "| | |\n")
         fid.write("|===\n\n")
     fid.write("Note: The latest SG" + str(group) + " Work programme can be found at link:" + URL + "ITU-T/workprog/wp_search.aspx?sg=" + str(group) + "[Work programme]\n\n")
     fid.write("== Candidate work items for decision at the next SG" + str(group) + " meeting\n\n")
