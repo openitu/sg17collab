@@ -423,7 +423,7 @@ if documentType == "report":
                 if index2 >= 0 and index3 >= 0:
                     location = meetingReport.title[index1 + 1:index3]
                     date = meetingReport.title[index3 + 1:index2]
-            fid.write("-    " + date + " (" + location + ") The report of this Rapporteur meeting, which is found in (TD" + str(meetingReport.number.value) + "-WP" + str(workingPartyNumber) + ") was approved at the WP" + str(workingPartyNumber) + "/" + str(group) + " held on _DD MM YYYY_\n\n")
+            fid.write("-    " + date + " (" + location + ") The report of this Rapporteur meeting, which is found in (TD" + str(meetingReport.number.value) + "/" + str(workingPartyNumber) + ") was approved at the WP" + str(workingPartyNumber) + "/" + str(group) + " held on _DD MM YYYY_\n\n")
     fid.write("== Discussions\n\n")
     fid.write("=== Outgoing work items\n\n")
     selectedTableRows = []
@@ -477,7 +477,7 @@ if documentType == "report":
             fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + tableRow.lastRev + "/G]*: " + tableRow.title + "\n\n")
     for tableRow in wPTableRows:
         if tableRow not in selectedTableRows:
-            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + tableRow.lastRev + "/WP-" + str(workingPartyNumber) + "]*: " + tableRow.title + "\n\n")
+            fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + tableRow.lastRev + "/" + str(workingPartyNumber) + "]*: " + tableRow.title + "\n\n")
     fid.write('== Draft new/revised Recommendations proposed for "Approval" (TAP), "determination" (TAP) or "consent" (AAP)\n\n')
     fid.write("Note: The rapporteur checked that the editor applied the link:" + URL + "/en/ITU-T/studygroups/Documents/Doc-ITUT-Recs-Skelet.docx[skeleton template to draft Recommendations]  and thet the following Recommendations are compliant with the link:" + URL + "/oth/T0AF000004/en[Author(s guide]\n\n")
     fid.write("=== Recommendations for TAP approval (WTSA Resolution 1, §9)\n\n")
@@ -747,7 +747,7 @@ if documentType == "report":
     fid.write("|===\n")
     fid.write("|Web|Source|Title|AI/Question\n\n")
     for tableRow in genTableRows:
-        name = "link:" + URL + tableRow.number.link + "[TD" + tableRow.number.value + tableRow.lastRev + "-GEN]"
+        name = "link:" + URL + tableRow.number.link + "[TD" + tableRow.number.value + tableRow.lastRev + "/G]"
         source = "link:" + URL + tableRow.source.link + "[" + tableRow.source.value + "]"
         fid.write("|" + name + "|" + source + "|" + insertEscape(tableRow.title) + "|Q" + str(question) + "/" + str(group) + "\n")
     fid.write("\n|===\n\n")
@@ -756,7 +756,7 @@ if documentType == "report":
     fid.write("|===\n")
     fid.write("|Web|Source|Title|AI/Question\n\n")
     for tableRow in plenTableRows:
-        name = "link:" + URL + tableRow.number.link + "[TD" + tableRow.number.value + tableRow.lastRev + "-PLEN]"
+        name = "link:" + URL + tableRow.number.link + "[TD" + tableRow.number.value + tableRow.lastRev + "/P]"
         source = "link:" + URL + tableRow.source.link + "[" + tableRow.source.value + "]"
         fid.write("|" + name + "|" + source + "|" + insertEscape(tableRow.title) + "|Q" + str(question) + "/" + str(group) + "\n")
     fid.write("\n|===\n\n")
@@ -765,7 +765,7 @@ if documentType == "report":
     fid.write("|===\n")
     fid.write("|Web|Source|Title|AI/Question\n\n")
     for tableRow in wPTableRows:
-        name = "link:" + URL + tableRow.number.link + "[TD" + tableRow.number.value + tableRow.lastRev + "-WP" + str(workingPartyNumber) + "]"
+        name = "link:" + URL + tableRow.number.link + "[TD" + tableRow.number.value + tableRow.lastRev + "/" + str(workingPartyNumber) + "]"
         source = "link:" + URL + tableRow.source.link + "[" + tableRow.source.value + "]"
         fid.write("|" + name + "|" + source + "|" + insertEscape(tableRow.title) + "|Q" + str(question) + "/" + str(group) + "\n")
     fid.write("\n|===\n\n")
