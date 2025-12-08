@@ -632,16 +632,31 @@ if documentType == "report":
         fid.write("|===\n")
         fid.write("|#|Question|Work Item|Status|Title|Editor|Base Text|Equivalent e.g. ISO/IEC|A.1/A.13 Justification Annex\n\n")
         num = 0
-        for element in newWorkItems:
-            num = num + 1
-            textTitle = ""
-            baseText = ""
-            (questionName,tD) = findTDByNumber(wPTableRows,element)
-            if not tD is None:
-                workItem = tD.acronym
-                textTile = tD.textTitle
-                baseText = "link:" + URL + tD.number.link + "[TD" + tD.number.value + tD.lastRev + "/" + str(workingPartyNumber) + "]"
-            fid.write("|" + str(num) + "|" + str(question) + "/" + str(group) + "|" + workItem + "|New|" + insertEscape(textTitle) + "| |" + baseText + "| |\n")
+        for tableRow in cTableRows:
+            if isNewWorkItem(tableRow.title):
+                num = num + 1
+                workItem = ""
+                textTitle = ""
+                baseText = ""
+                index1 = tableRow.title.find("X.")
+                if index1 >= 0:
+                    index2 = tableRow.title.find(":",index1)
+                    if index2 >= 0:
+                        workItem = tableRow.title[index1:index2]
+                        textTitle = tableRow.title[index2 + 1:]
+                        if textTitle.startswith('"') and textTitle.endswith('"'):
+                            textTitle = textTitle[1:len(textTitle) - 1]
+                else:
+                    index1 = tableRow.title.find("TR.")
+                    if index1 >= 0:
+                        index2 = tableRow.title.find(" ",index1)
+                        if index2 >= 0:
+                            workItem = tableRow.title[index1:index2]
+                            textTitle = tableRow.title[index2 + 1:]
+                            if textTitle.startswith('"') and textTitle.endswith('"'):
+                                textTitle = textTitle[1:len(textTitle) - 1]
+                baseText = "link:" + URL + tableRow.number.link + "[C" + tableRow.number.value + tableRow.lastRev + "]"
+                fid.write("|" + str(num) + "|" + str(question) + "/" + str(group) + "|" + workItem + "|New|" + insertEscape(textTitle) + "| |" + baseText + "| |\n")
         fid.write("\n|===\n\n")
         fid.write("Please create an ANNEX for each new work item, using the A.1 (found in ANNEX C) for normative texts (e.g. ITU-T Recommendations) or A.13 (found in ANNEX D) for non-normative texts (e.g. Supplements, Technical Reports, etc.) justification templates.\n\n")
         fid.write("Note1: A.1 justification template can be downloaded link;" + URL + "/en/ITU-T/studygroups/Documents/Form-A.01-Annex-A-New-Rec-Justif-template.docx[here].\n\n")
