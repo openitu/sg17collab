@@ -479,7 +479,7 @@ if documentType == "report":
         if tableRow not in selectedTableRows:
             fid.write("link:" + URL + tableRow.number.link + "[*TD" + tableRow.number.value + tableRow.lastRev + "/" + str(workingPartyNumber) + "]*: " + tableRow.title + "\n\n")
     fid.write('== Draft new/revised Recommendations proposed for "Approval" (TAP), "determination" (TAP) or "consent" (AAP)\n\n')
-    fid.write("Note: The rapporteur checked that the editor applied the link:" + URL + "/en/ITU-T/studygroups/Documents/Doc-ITUT-Recs-Skelet.docx[skeleton template to draft Recommendations]  and thet the following Recommendations are compliant with the link:" + URL + "/oth/T0AF000004/en[Author(s guide]\n\n")
+    fid.write("Note: The rapporteur checked that the editor applied the link:" + URL + "/en/ITU-T/studygroups/Documents/Doc-ITUT-Recs-Skelet.docx[skeleton template to draft Recommendations]  and that the following Recommendations are compliant with the link:" + URL + "/oth/T0AF000004/en[Author(s guide]\n\n")
     fid.write("=== Recommendations for TAP approval (WTSA Resolution 1, §9)\n\n")
     if len(approval) >= 0:
         fid.write("The Following draft Recommendations are proposed for TAP approval:\n\n")
@@ -722,7 +722,7 @@ if documentType == "report":
     fid.write("\n|===\n\n")
     fid.write("Details will be posted on the ITU-T SG" + str(group) + " Rapporteur Group meetings website: link:" + URL + "/net/ITU-T/lists/rgm.aspx?Group=" + str(group) + "&type=interim[Rapporteur Group meetings website]\n\n")
     fid.write("== Scheduled WP or SG" + str(group) + " meetings\n\n")
-    fid.write("Q" + str(question) + "/" + str(group) + " is planning to meet again during SG" + str(group) + " or WP" + str(workingPartyNumber) + " of SG" + str(group) + ", to be held from _start_ to _end_. This question wull require _number_ of sessions\n\n")
+    fid.write("Q" + str(question) + "/" + str(group) + " is planning to meet again during SG" + str(group) + " or WP" + str(workingPartyNumber) + " of SG" + str(group) + ", to be held from _start_ to _end_. This question will require _number_ of sessions\n\n")
     fid.write("Details will be posted on the ITU-T SG" + str(group) + " website link:" + URL + "/go/tsg" + str(group) + "[SG" + str(group) + " website]\n\n")
     fid.write("[appendix]\n")
     fid.write("[align=center]\n")
