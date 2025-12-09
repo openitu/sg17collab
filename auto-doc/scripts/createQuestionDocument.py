@@ -703,7 +703,7 @@ if documentType == "report":
                         break
             fid.write("|" + str(num) + "|" + str(question) + "/" + str(group) + "|" + str(element) + "|" + status +  "|" + insertEscape(title) + "| |" + tDName + "| | |\n")
         fid.write("|===\n\n")
-    fid.write("Note: The latest SG" + str(group) + " Work programme can be found at link:" + URL + "ITU-T/workprog/wp_search.aspx?sg=" + str(group) + "[Work programme]\n\n")
+    fid.write("Note: The latest SG" + str(group) + " Work programme can be found at link:" + URL + "/ITU-T/workprog/wp_search.aspx?sg=" + str(group) + "[Work programme]\n\n")
     fid.write("== Candidate work items for decision at the next SG" + str(group) + " meeting\n\n")
     if len(candidateForNextMeeting) >= 0:
         fid.write("The following work items are planned for decision at next SG" + str(group) + " meeting\n\n")
